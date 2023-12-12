@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>YouTube Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .cousal::-webkit-scrollbar{
+            width: 0px;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <div class="main flex border border-black">
+
+        <div class="left hidden sm:block px-3 border border-black w-2/12">
+            <!-- Logo -->
+            <div class="pl-2 logo   flex items-center">
+                <i class="fa-solid fa-grip-lines mr-5"></i>
+                <div class="flex items-center">
+                    <img src="./imgs//logo.png" alt="logo" class="max-w-full max-h-12" srcset="">
+                    <p class="font-bold">YouTube <sup class="text-gray-500">IN</sup> </p>
+                </div>
+            </div>
+            <!-- buttosn -->
+
+            <div class="  my-3">
+                <div class="flex items-center relative  p-2 bg-gray-700 rounded rounded-lg">
+                    <i class="fa-solid fa-house "></i>
+                    <p class="px-4 absolute left-5">Home</p>
+                </div>
+                <div class="flex items-center relative p-2 mt-2 hover:bg-gray-700 hover:rounded-lg hover:cursor-pointer">
+                    <i class="fa-regular fa-file-video "></i>
+                    <p class="px-4 absolute left-5">Shorts</p>
+                </div>
+                <div class="flex items-center relative p-2 mt-2 hover:bg-gray-700 hover:rounded-lg hover:cursor-pointer">
+                    <i class="fa-solid fa-play"></i>
+                    <p class="px-4 absolute left-5">Subscriptions</p>
+                </div>
+                
+                <hr class="my-2">
+
+                
+
+                <div class="flex items-center p-2 mt-2 hover:bg-gray-700 hover:rounded-lg hover:cursor-pointer">
+                    <p class="pr-3 left-5">You</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="flex items-center relative p-2 mt-2 hover:bg-gray-700 hover:rounded-lg hover:cursor-pointer">
+                    <i class="fa-regular fa-address-card"></i>
+                    <p class="px-4 absolute left-5">Your Channel</p>
+                </div>
+                <div class="flex items-center relative p-2 mt-2 hover:bg-gray-700 hover:rounded-lg hover:cursor-pointer">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <p class="px-4 absolute left-5">History</p>
+                </div>
+                <div class="flex items-center relative p-2 mt-2 hover:bg-gray-700 hover:rounded-lg hover:cursor-pointer">
+                    <i class="fa-brands fa-youtube"></i>
+                    <p class="px-4 absolute left-5">Your videos</p>
+                </div>
+                <div class="flex items-center relative p-2 mt-2 hover:bg-gray-700 hover:rounded-lg hover:cursor-pointer">
+                    <i class="fa-regular fa-clock"></i>
+                    <p class="px-4 absolute left-5">Watch later</p>
+                </div>
+                <div class="flex items-center relative p-2 mt-2 hover:bg-gray-700 hover:rounded-lg hover:cursor-pointer">
+                    <i class="fa-solid fa-scissors"></i>
+                    <p class="px-4 absolute left-5">Your clips</p>
+                </div>
+                <div class="flex items-center relative p-2 mt-2 hover:bg-gray-700 hover:rounded-lg hover:cursor-pointer">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <p class="px-4 absolute left-5">Show more</p>
+                </div>
+
+                <hr class="my-2">
+
+                <div class="flex items-center relative p-2 mt-2 hover:bg-gray-700 hover:rounded-lg hover:cursor-pointer">
+                    <img src="./imgs/carry.jpg" alt="" class="max-h-6 max-w-full rounded rounded-full">
+                    <p class="px-4 absolute left-5">carryislive</p>
+                </div>
+                <div class="flex items-center relative p-2 mt-2 hover:bg-gray-700 hover:rounded-lg hover:cursor-pointer">
+                    <img src="./imgs/ashihs.jpg" alt="" class="max-h-6 max-w-full rounded rounded-full">
+                    <p class="px-4 absolute left-5">Ashish</p>
+                </div>
+                <div class="flex items-center relative p-2 mt-2 hover:bg-gray-700 hover:rounded-lg hover:cursor-pointer">
+                    <img src="./imgs/potato.jpg" alt="" class="max-h-6 max-w-full rounded rounded-full">
+                    <p class="px-4 absolute left-5">Potato</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="right  border border-black w-full sm:w-10/12">
+
+            <!-- Up -->
+            <div class="w-full z-10 flex h-12 sticky top-0 bg-black">
+                <!-- Search -->
+                <div class="search   w-10/12 flex justify-center">
+
+                    <div class="searchBox w-full sm:w-8/12 flex items-center ">
+                        <img src="./imgs//logo.png" alt="logo" class="sm:hidden max-w-full max-h-12" srcset="">
+                         <div contenteditable="true" class="border border-gray-500 w-full sm:w-9/12 rounded rounded-full mr-4"
+                            type="text">
+                            <div class="flex justify-between text-gray-500">
+                                <p class="px-3">Search</p>
+                                <div class="searchIcon px-3 bg-gray-700 text-gray-300 rounded rounded-r-full">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-microphone hidden sm:block hover:text-gray-300 hover:cursor-pointer"></i>
+                    </div>
+                </div>
+
+                <!-- Profile -->
+                <div class="profile   w-2/12 px-4 flex justify-around items-center">
+                    <i class="fa-solid fa-video hidden sm:block hover:text-gray-300 hover:cursor-pointer"></i>
+                    <i class="fa-regular fa-bell hidden sm:block hover:text-gray-300 hover:cursor-pointer"></i>
+                    <div class="icon">
+                        <img src="./imgs/profile.png" alt="icon" class="max-h-8 max-w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="cousal my-2 flex overflow overflow-x-auto">
+                <button class="bg-white text-black px-2 mx-1 rounded rounded-lg text-sm hover:cursor-pointer">All</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">Gaming</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">Comedy</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">GTA</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">Naruto</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">JavaScript</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">Music</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">Live</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">Movies</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">React</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">Node</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">CSS</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">HTML5</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">Python</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">Java</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">PUBG</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">GTA6</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">Python</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">Java</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">PUBG</button>
+                <button class="bg-gray-700 px-2 mx-1 rounded rounded-lg text-sm hover:bg-white hover:text-black hover:cursor-pointer">GTA6</button>
+            </div>
+
+            <!-- videos -->
+            <div class="videos   flex flex-wrap">
+
+                <!-- One video -->
+                <div class="video hover:w=[]   w-full sm:w-1/4 px-1 my-2 hover:cursor-pointer ">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb1.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/profile.png" alt="" class="max-h-8 max-w-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">Highest Kills in this new winter mode.</p>
+                            <p class="text-xs text-gray-400 mt-1">thearunsky</p>
+                            <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- One video -->
+                <div class="video   w-full sm:w-1/4 px-1 my-2">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb3.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/carry.jpg" alt="" class="max-h-8 max-w-full rounded-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">Does sasuke get jealous over naruto's sage mode</p>
+                            <p class="text-xs text-gray-400 mt-1">carryislive</p>
+                            <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- One video -->
+                <div class="video   w-full sm:w-1/4 px-1 my-2">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb2.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/ashihs.jpg" alt="" class="max-h-8 max-w-full rounded rounded-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">Top five overrated movies, Animal is one of them</p>
+                            <p class="text-xs text-gray-400 mt-1">Ashish Chanchalani</p>
+                            <p class="text-xs text-gray-400">2M views - 45 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+                 <!-- One video -->
+                 <div class="video hover:w=[]   w-full sm:w-1/4 px-1 my-2 hover:cursor-pointer ">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb1.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/profile.png" alt="" class="max-h-8 max-w-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">Highest Kills in this new winter mode.</p>
+                            <p class="text-xs text-gray-400 mt-1">thearunsky</p>
+                            <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- One video -->
+                <div class="video   w-full sm:w-1/4 px-1 my-2">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb4.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/potato.jpg" alt="" class="max-h-8 max-w-full rounded rounded-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">This can is unbelievable. It can destroy whole train in one blow</p>
+                            <p class="text-xs text-gray-400 mt-1">Potato</p>
+                            <p class="text-xs text-gray-400">101M views - 3 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                     <!-- One video -->
+                     <div class="video hover:w=[]   w-full sm:w-1/4 px-1 my-2 hover:cursor-pointer ">
+                        <!-- Thumbnail -->
+                        <div class="tumb relative">
+                            <img src="./imgs/tumb1.webp" alt="tumb1" class="rounded rounded-xl">
+                        </div>
+                        <!-- Decription -->
+                        <div class="decs flex mt-1">
+                            <div class="decsIcon  w-2/12 flex justify-center">
+                                <img src="./imgs/profile.png" alt="" class="max-h-8 max-w-full">
+                            </div>
+                            <div class="w-10/12">
+                                <p class="text-xs font-semibold">Highest Kills in this new winter mode.</p>
+                                <p class="text-xs text-gray-400 mt-1">thearunsky</p>
+                                <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                <!-- One video -->
+                <div class="video hover:w=[]   w-full sm:w-1/4 px-1 my-2 hover:cursor-pointer ">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb1.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/profile.png" alt="" class="max-h-8 max-w-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">Highest Kills in this new winter mode.</p>
+                            <p class="text-xs text-gray-400 mt-1">thearunsky</p>
+                            <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- One video -->
+                <div class="video   w-full sm:w-1/4 px-1 my-2">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb3.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/carry.jpg" alt="" class="max-h-8 max-w-full rounded-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">Does sasuke get jealous over naruto's sage mode</p>
+                            <p class="text-xs text-gray-400 mt-1">carryislive</p>
+                            <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- One video -->
+                <div class="video   w-full sm:w-1/4 px-1 my-2">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb2.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/ashihs.jpg" alt="" class="max-h-8 max-w-full rounded rounded-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">Top five overrated movies, Animal is one of them</p>
+                            <p class="text-xs text-gray-400 mt-1">Ashish Chanchalani</p>
+                            <p class="text-xs text-gray-400">2M views - 45 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+                 <!-- One video -->
+                 <div class="video hover:w=[]   w-full sm:w-1/4 px-1 my-2 hover:cursor-pointer ">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb1.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/profile.png" alt="" class="max-h-8 max-w-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">Highest Kills in this new winter mode.</p>
+                            <p class="text-xs text-gray-400 mt-1">thearunsky</p>
+                            <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- One video -->
+                <div class="video   w-full sm:w-1/4 px-1 my-2">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb4.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/potato.jpg" alt="" class="max-h-8 max-w-full rounded rounded-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">This can is unbelievable. It can destroy whole train in one blow</p>
+                            <p class="text-xs text-gray-400 mt-1">Potato</p>
+                            <p class="text-xs text-gray-400">101M views - 3 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                     <!-- One video -->
+                     <div class="video hover:w=[]   w-full sm:w-1/4 px-1 my-2 hover:cursor-pointer ">
+                        <!-- Thumbnail -->
+                        <div class="tumb relative">
+                            <img src="./imgs/tumb1.webp" alt="tumb1" class="rounded rounded-xl">
+                        </div>
+                        <!-- Decription -->
+                        <div class="decs flex mt-1">
+                            <div class="decsIcon  w-2/12 flex justify-center">
+                                <img src="./imgs/profile.png" alt="" class="max-h-8 max-w-full">
+                            </div>
+                            <div class="w-10/12">
+                                <p class="text-xs font-semibold">Highest Kills in this new winter mode.</p>
+                                <p class="text-xs text-gray-400 mt-1">thearunsky</p>
+                                <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                     <!-- One video -->
+                     <div class="video hover:w=[]   w-full sm:w-1/4 px-1 my-2 hover:cursor-pointer ">
+                        <!-- Thumbnail -->
+                        <div class="tumb relative">
+                            <img src="./imgs/tumb1.webp" alt="tumb1" class="rounded rounded-xl">
+                        </div>
+                        <!-- Decription -->
+                        <div class="decs flex mt-1">
+                            <div class="decsIcon  w-2/12 flex justify-center">
+                                <img src="./imgs/profile.png" alt="" class="max-h-8 max-w-full">
+                            </div>
+                            <div class="w-10/12">
+                                <p class="text-xs font-semibold">Highest Kills in this new winter mode.</p>
+                                <p class="text-xs text-gray-400 mt-1">thearunsky</p>
+                                <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                         <!-- One video -->
+                 <div class="video hover:w=[]   w-full sm:w-1/4 px-1 my-2 hover:cursor-pointer ">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb1.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/profile.png" alt="" class="max-h-8 max-w-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">Highest Kills in this new winter mode.</p>
+                            <p class="text-xs text-gray-400 mt-1">thearunsky</p>
+                            <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- One video -->
+                <div class="video hover:w=[]   w-full sm:w-1/4 px-1 my-2 hover:cursor-pointer ">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb1.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/profile.png" alt="" class="max-h-8 max-w-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">Highest Kills in this new winter mode.</p>
+                            <p class="text-xs text-gray-400 mt-1">thearunsky</p>
+                            <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- One video -->
+                <div class="video   w-full sm:w-1/4 px-1 my-2">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb3.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/carry.jpg" alt="" class="max-h-8 max-w-full rounded-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">Does sasuke get jealous over naruto's sage mode</p>
+                            <p class="text-xs text-gray-400 mt-1">carryislive</p>
+                            <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- One video -->
+                <div class="video   w-full sm:w-1/4 px-1 my-2">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb2.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/ashihs.jpg" alt="" class="max-h-8 max-w-full rounded rounded-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">Top five overrated movies, Animal is one of them</p>
+                            <p class="text-xs text-gray-400 mt-1">Ashish Chanchalani</p>
+                            <p class="text-xs text-gray-400">2M views - 45 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+                 <!-- One video -->
+                 <div class="video hover:w=[]   w-full sm:w-1/4 px-1 my-2 hover:cursor-pointer ">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb1.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/profile.png" alt="" class="max-h-8 max-w-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">Highest Kills in this new winter mode.</p>
+                            <p class="text-xs text-gray-400 mt-1">thearunsky</p>
+                            <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- One video -->
+                <div class="video   w-full sm:w-1/4 px-1 my-2">
+                    <!-- Thumbnail -->
+                    <div class="tumb relative">
+                        <img src="./imgs/tumb4.webp" alt="tumb1" class="rounded rounded-xl">
+                    </div>
+                    <!-- Decription -->
+                    <div class="decs flex mt-1">
+                        <div class="decsIcon  w-2/12 flex justify-center">
+                            <img src="./imgs/potato.jpg" alt="" class="max-h-8 max-w-full rounded rounded-full">
+                        </div>
+                        <div class="w-10/12">
+                            <p class="text-xs font-semibold">This can is unbelievable. It can destroy whole train in one blow</p>
+                            <p class="text-xs text-gray-400 mt-1">Potato</p>
+                            <p class="text-xs text-gray-400">101M views - 3 minutes ago</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                     <!-- One video -->
+                     <div class="video hover:w=[]   w-full sm:w-1/4 px-1 my-2 hover:cursor-pointer ">
+                        <!-- Thumbnail -->
+                        <div class="tumb relative">
+                            <img src="./imgs/tumb1.webp" alt="tumb1" class="rounded rounded-xl">
+                        </div>
+                        <!-- Decription -->
+                        <div class="decs flex mt-1">
+                            <div class="decsIcon  w-2/12 flex justify-center">
+                                <img src="./imgs/profile.png" alt="" class="max-h-8 max-w-full">
+                            </div>
+                            <div class="w-10/12">
+                                <p class="text-xs font-semibold">Highest Kills in this new winter mode.</p>
+                                <p class="text-xs text-gray-400 mt-1">thearunsky</p>
+                                <p class="text-xs text-gray-400">101M views - 61 minutes ago</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                
+
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
